@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Hacker News Entry List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that displays entries from Hacker News.
 
-## Available Scripts
+## Setup
 
-In the project directory, you can run:
+### 1. API Setup
 
-### `npm start`
+This project relies on an external API to fetch data. You can find the API and instructions for setup and execution at the following link: [Hacker News API](https://github.com/kelvinojedaepn/IE_Express_JS). Please follow the README in that repository to install and run the API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Project Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once the API is up and running, proceed with the following steps to set up this project:
 
-### `npm test`
+* **Clone the repository**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone <repository-url>
+   cd <project-directory>
+    ```
+* **Install project dependencies fo this project**:
+    ```bash
+   npm install
+   ```
+* **Run the project**:
+    ```bash
+   npm start
+   ```
+### 3. Components
 
-### `npm run build`
+* **App**: The root component of the application, which renders the EntryList component.
+* **EntryList**: This component fetches data from the API, filters the entries based on the number of words in the title, and displays them. It includes buttons to filter entries with titles having more than five words or five words or fewer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 4. Testing
+Tests are included to verify the functionality of the `countWords` utility function. The tests check if the function correctly counts the number of words, ignoring symbols and special characters.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* To run the tests, use the following command:
+    ```bash
+    npm test
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5. Notes
+* Ensure that the API is operational before starting the application.
+* Refer to the [Readme](https://github.com/kelvinojedaepn/IE_Express_JS) in the API repository for detailed instructions on its setup and execution.
