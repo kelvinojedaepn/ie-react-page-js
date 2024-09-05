@@ -15,8 +15,8 @@ Once the API is up and running, proceed with the following steps to set up this 
 * **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/kelvinojedaepn/ie-react-page-js
+   cd https://github.com/kelvinojedaepn/ie-react-page-js
     ```
 * **Install project dependencies fo this project**:
     ```bash
@@ -42,3 +42,4 @@ Tests are included to verify the functionality of the `countWords` utility funct
 ### 5. Notes
 * Ensure that the API is operational before starting the application.
 * Refer to the [Readme](https://github.com/kelvinojedaepn/IE_Express_JS) in the API repository for detailed instructions on its setup and execution.
+* For detailed instructions on how to run these projects, please refer to the README files of the respective repositories. Watch the video here: [Technical Challenge: Running API and Frontend Code](https://github.com/kelvinojedaepn/IE_Express_JS)
